@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.mukhter.qrpay.Login">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:textColor="#fc605c"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="57dp"
+        android:gravity="center_horizontal"
+        android:text="QR Pay"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView2"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:text="Hello,\nWelcome Back!"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="57dp"
+        android:layout_below="@id/textView2"/>
+
+
+    <EditText
+        android:layout_width="298dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/emaillogg"
+        android:layout_marginTop="43dp"
+        android:layout_below="@id/textView3"
+        android:background="@drawable/edittext_bottomline"
+        android:textColor="#000"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:layout_alignStart="@+id/textView2" />
+
+
+    <TextView
+        android:text="Forgot your password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/textView4"
+        android:textColor="#fc605c"
+        android:layout_marginEnd="18dp"
+        android:layout_below="@+id/passwordlogg"
+        android:layout_alignEnd="@+id/log_btn" />
+
+    <EditText
+        android:layout_width="298dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/passwordlogg"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/edittext_bottomline"
+        android:textColor="#000"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_below="@+id/emaillogg"
+        android:layout_alignStart="@+id/emaillogg" />
+
+    <Button
+        android:layout_height="46dp"
+        android:text="Sign In"
+        android:background="@drawable/rounded_btn"
+        android:id="@+id/log_btn"
+        android:onClick="Login"
+        android:layout_width="298dp"
+        android:layout_marginTop="43dp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/passwordlogg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#b5b5b5"
+        android:text="Don’t have an account?"
+        android:layout_below="@+id/log_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#111"
+        android:text="Register"
+        android:layout_marginLeft="285dp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="34dp"
+        android:layout_below="@id/log_btn" />
+</RelativeLayout>

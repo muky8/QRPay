@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_amount_activty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mukhter.qrpay.AmountActivty">
+
+
+    <EditText
+        android:layout_width="298dp"
+        android:layout_height="40dp"
+        android:id="@+id/amountno"
+        android:background="@drawable/edittext_bottomline"
+        android:textColor="#000"
+        android:inputType="textPersonName"
+        android:hint="Amount"
+        android:layout_marginTop="230dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_height="46dp"
+        android:text="Generate"
+        android:background="@drawable/rounded_btn"
+        android:id="@+id/generate_btn"
+        android:layout_width="298dp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="150dp"
+        android:layout_below="@id/amountno"/>
+</RelativeLayout>

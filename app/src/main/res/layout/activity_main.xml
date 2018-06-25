@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.mukhter.qrpay.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/background"
+            android:id="@+id/main_background"
+         />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="47sp"
+        android:textColor="#fc605c"
+        android:gravity="center_horizontal"
+        android:text="QR  Pay"
+        android:layout_marginStart="55dp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="360dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:text="Easiest way to pay and\nget Paid."
+        android:layout_marginTop="435dp"
+        android:layout_marginLeft="55dp"
+        android:textStyle="normal|bold"
+        android:id="@+id/easiestway" />
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:background="@drawable/rounded_button"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/rounded_buttonr"
+        android:layout_marginRight="40dp"
+        android:layout_alignBaseline="@+id/bt_login"
+        android:layout_alignBottom="@+id/bt_login"
+        android:layout_toEndOf="@+id/bt_login"
+        android:layout_toLeftOf="@id/bt_login"/>
+
+
+</RelativeLayout>
